@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Hand Gesture Recognizer</title>
+</head>
+
+<body>
+    <center>
+    <div id="heading_div">
+        <h1>Hand Gesture Recognizer</h1><br>
+        <span>&#9757;</span>
+        <span>&#9996;</span>
+        <span>&#128077;</span>
+        <span>&#128078;</span>
+        <span>&#129304;</span>
+        <span>&#128076;</span>
+    </div><br>
+    <h3>This webpage is capable of recognizing gestures crated by hand!</h3><br>
+    <h4>This model is trained to recognize these gestures:-</h4>
+    <br>
+    <span>&#9757;</span><span>&#9996;</span><span>&#128077;</span><span>&#128078;</span><span>&#129304;</span><span>&#128076;</span>
+    <br><br>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" id="webcam_div">
+        <label>This is your webcam view :-</label>
+        <div id="webcam">
+        </div>
+        <button onclick="selfie()">Take selfie</button>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" id="prediction_div">
+        <button class="btn btn-info">Prediction :-</button>
+        <label id="prediction"></label>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" id="preview_div">
+        <label>This is your preview :-</label>
+        <div id="preview">
+        </div>
+        <button onclick="check()">Predict Gesture</button>
+    </div>
+    </center>
+</body>
+
+</html>
